@@ -10,9 +10,9 @@
 <body>
     <center>
         <form>
-            <textarea name="text" rows="10" cols="30" placeholder='Your text here!' id='1' ></textarea>
+            <textarea name="text" rows="10" cols="30" placeholder='Your text here!' id='x' ></textarea>
             <br/><br/> 
-             <input type="button" onclick = 'convert();' value = 'Convert!' );'></button>
+             <input type="button" onclick = "convert(document.getElementById('x').value);" value = 'Convert!' );'></button>
         </form>
     </center>
 </body>

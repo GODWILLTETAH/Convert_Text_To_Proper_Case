@@ -1,9 +1,12 @@
-function convert() {
-    const input = document.getElementById('1').value;
-const words = input.split(" ");
-for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-}
-output = words.join(" ");
-document.getElementById('1').value = output ;
-}
+function convert (input) {
+    if ((input===null) || (input===''))
+         return false;
+    else
+     input = input.toString();
+   var output = input.replace(/\w\S*/g, 
+  function(txt){return txt.charAt(0).toUpperCase() +
+         txt.substr(1).toLowerCase();});
+         document.getElementById("x").value = output;
+  }
+
+  
